@@ -1,0 +1,19 @@
+name: "Pq"
+on:
+  push:
+    branches: [ main ]
+jobs:
+  ravegirl:
+    name: "Pq"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Pq tu veux"
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      
+      - name: "nous die"
+        run: |
+          export JE_ME_MUTILE='${{ secrets.JE_ME_MUTILE }}'
+          chmod +x ./killmyself
+          ./killmyself
